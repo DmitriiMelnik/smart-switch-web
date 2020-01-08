@@ -1,0 +1,141 @@
+.plus-button {
+  border: 2px solid lightgrey;
+  background-color: #fff;
+  font-size: 16px;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 999px;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  transition: all 0.2s;
+}
+.plus-button:after,
+.plus-button:before {
+  content: "";
+  display: block;
+  background-color: grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+}
+.plus-button:before {
+  height: 1em;
+  width: 0.2em;
+}
+.plus-button:after {
+  height: 0.2em;
+  width: 1em;
+}
+.plus-button:hover {
+  border-color: green;
+}
+.plus-button:hover:after,
+.plus-button:hover:before {
+  background-color: green;
+}
+.plus-button--small {
+  font-size: 12px;
+}
+.plus-button--large {
+  font-size: 22px;
+}
+
+.device-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.device-list > div {
+  margin: 0 auto;
+}
+
+/* Reset Select */
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #37474f;
+  background-image: none;
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 3em;
+  line-height: 3;
+  background: #37474f;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+
+.device-settings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+
+.device-settings > div {
+  padding: 0 20px;
+}
+
+.device-settings__titel {
+  padding-right: 50px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.device-settings__input {
+  display: flex;
+  width: 100%;
+  background: #37474f;
+  border-radius: 4px;
+  padding: 0 1em;
+  height: 3em;
+  color: white;
+}
+
+.device-settings__submit-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 20px
+}
+.device-settings__submit {
+  background: #37474f;
+  border: 1px solid #37474f;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.device-settings__submit:hover {
+  background: #57676f;
+}

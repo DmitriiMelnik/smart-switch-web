@@ -1,0 +1,77 @@
+.settings-rooms {
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.15);
+}
+.settings-rooms__header {
+  text-align: center;
+  margin: 10px 0 10px;
+}
+.settings-rooms__list {
+  list-style: none;
+  padding: 0;
+}
+.settings-rooms__list li {
+  position: relative;
+  padding: 10px 0 10px;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.settings-rooms__list li span {
+  position: relative;
+  display: block;
+  transition: all 550ms ease-in-out;
+}
+.settings-rooms__close {
+  z-index: 2;
+  position: absolute;
+  right: 32px;
+  opacity: 0.3;
+}
+.settings-rooms__close:hover {
+  opacity: 1;
+}
+.settings-rooms__close:before,
+.settings-rooms__close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 16px;
+  width: 2px;
+  background-color: #333;
+}
+.settings-rooms__close:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.settings-rooms__close:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.settings-rooms__submit {
+  background: #37474f;
+  border: 1px solid #37474f;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.settings-rooms__submit:hover {
+  background: #57676f;
+}
+
+.settings-rooms__input {
+  border: 0;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+.settings-rooms__form {
+  margin-top: 10px;
+  border: 1px solid #37474f;
+}

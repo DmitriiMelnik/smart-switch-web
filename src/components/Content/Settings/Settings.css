@@ -1,0 +1,4 @@
+#settings {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+}
